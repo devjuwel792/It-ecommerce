@@ -1,0 +1,19 @@
+@mixin center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin bacground-img($img) {
+  background-image: url($img);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin overlay {
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
