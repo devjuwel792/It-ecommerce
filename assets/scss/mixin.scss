@@ -17,3 +17,18 @@
   width: 100%;
   opacity: 0.8;
 }
+
+@mixin h-center {
+  display: flex;
+  justify-content: center;
+}
+@mixin v-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin responsive-max($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}

@@ -1,0 +1,26 @@
+.top-header {
+  background-color: #1e1b38;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .top-header {
+    display: none;
+  }
+}
+.top-header .top-header-left {
+  display: flex;
+}
+.top-header .top-header-left a {
+  color: #fff;
+}
+.top-header .top-header-right div {
+  margin: 0 10px;
+}
+.top-header .top-header-right a {
+  font-size: 1.5rem;
+  color: white;
+}/*# sourceMappingURL=header.css.map */
