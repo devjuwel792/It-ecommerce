@@ -18,7 +18,7 @@
   background-color: black;
   height: 100%;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .breadcum-section .breadcrumb {
   padding-top: 10px;
@@ -29,5 +29,6 @@
 }
 .breadcum-section .breadcrumb li.breadcrumb-item a {
   font-weight: 700;
-  color: white;
+  color: #7caf02;
+  text-decoration: underline;
 }/*# sourceMappingURL=breadcurmb.css.map */

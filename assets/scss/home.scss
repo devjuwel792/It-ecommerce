@@ -1,0 +1,144 @@
+@import "./mixin.scss";
+@import "./variable.scss";
+// // @import;
+// @import;
+
+@mixin circle-icon-btn {
+  height: 30px;
+  width: 30px;
+  background-color: $primary-color;
+  border-radius: 50%;
+  text-align: center;
+  @include center-center;
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 999999999;
+}
+.card {
+  border-radius: 0;
+  position: relative;
+  padding-bottom: 20px;
+
+  .batch {
+    width: 70px;
+    height: 30px;
+    @include center-center;
+    color: rgb(255, 255, 255);
+    background-color: $primary-color;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+  .wishlist-btn {
+    @include circle-icon-btn;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  .quick-view {
+    @include circle-icon-btn();
+    position: absolute;
+    top: 16%;
+    right: 5%;
+
+    transform: translatex(45px);
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .card-img {
+    @include center-center;
+
+    img {
+      height: 18rem;
+      width: 18rem;
+      //   height: 100%;
+      //   width: 100%;
+    }
+    position: relative;
+    .add-to-cart {
+      display: block;
+      padding: 10px 15px;
+      background-color: $primary-color;
+      color: $color-white;
+      //   width: 60%;
+      font-size: 1.3rem;
+      border: none;
+      text-align: center;
+
+      position: absolute;
+      // height: 40px;
+      width: 12rem;
+      bottom: 5px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      //   display: none;
+      opacity: 0;
+      transform: translateY(14px);
+      transition: 0.6s;
+    }
+  }
+  &:hover {
+    border: 1px solid $primary-color;
+    .add-to-cart {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+      //   animation: slide-up 0.6s;
+    }
+    .quick-view {
+      opacity: 1;
+      transform: translatex(0px);
+    }
+    img {
+      transform: scale(1.1) rotate(5deg);
+      transition: 0.6s;
+    }
+  }
+
+  .card-body {
+    .star {
+      color: $color-00;
+      font-size: 1.6rem;
+    }
+    .card-title {
+      font-size: 1.6rem;
+      font-weight: bolder;
+    }
+    .card-price {
+      font-size: 2.4rem;
+      color: $primary-color;
+      font-weight: 500;
+      //   vertical-align: middle;
+    }
+    del {
+      //   vertical-align: middle;
+      font-size: 1.6rem;
+      color: gray;
+    }
+  }
+}
+
+// @keyframes slide-up {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(14px);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: none;
+//   }
+// }
+
+// @keyframes slide-left {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(14px);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: none;
+//   }
+// }

@@ -15,7 +15,7 @@
   background-color: black;
   height: 100%;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 @mixin h-center {
@@ -27,8 +27,32 @@
   align-items: center;
 }
 
-@mixin responsive-max($bp) {
+@mixin res($bp) {
   @media (max-width: $bp) {
     @content;
   }
 }
+@mixin button($radious: 0px) {
+  padding: 12px 30px;
+  background-color: $primary-color;
+  border: none;
+  border-radius: $radious;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+// @keyframes slide-up {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(14px);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: none;
+//   }
+// }

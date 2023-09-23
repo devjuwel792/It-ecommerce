@@ -21,7 +21,8 @@
       color: $color-white;
       a {
         font-weight: 700;
-        color: white;
+        color: $primary-color;
+        text-decoration: underline;
       }
     }
   }

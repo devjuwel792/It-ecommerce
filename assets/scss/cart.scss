@@ -1,0 +1,167 @@
+@import "./variable";
+@import "./mixin";
+
+.card-offcanvas {
+  .offcanvas-header {
+    .btn-close {
+      font-size: 1.6rem;
+      --bs-btn-close-color: #000;
+      --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+
+      box-sizing: border-box !important;
+
+      &:hover {
+        transform: rotate(180deg);
+        transition: 0.6s;
+      }
+    }
+
+    h5 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+  .offcanvas-body {
+    .cart {
+      .cart-img {
+        height: 100px;
+        width: 100px;
+        border: 1px solid rgba(207, 207, 207, 0.514);
+        padding: 5px;
+      }
+    }
+
+    .button-cart {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 12px 0px;
+      background-color: transparent;
+      margin-top: 15px;
+      &:hover {
+        background-color: $color-99;
+        color: #fff !important;
+        border: 1px solid $color-99;
+      }
+    }
+    .full-btn {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+  .sub-total {
+    h5 {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.close-btn button {
+  border-radius: 50% !important;
+  height: 25px;
+  width: 25px;
+  border: none;
+  transition: 0.6s;
+}
+.close-btn button:hover {
+  background-color: $primary-color;
+}
+
+.product-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+.product-title a {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.offcanvas-header {
+  padding: 20px 50px 20px 30px;
+}
+
+// cart page
+
+.quantity {
+  .quantity-container {
+    input {
+      width: 80px;
+      padding: 8px 10px;
+      text-align: center;
+      border: 1px solid $primary-color;
+      &:focus {
+        outline: none;
+      }
+    }
+    .quantity-button {
+      border: none;
+      background-color: $primary-color;
+      color: #fff;
+      padding: 5px 6px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.button-1 {
+  @include button();
+  margin-top: 20px;
+}
+
+.cupon-area {
+  border: 1px solid #cacaca;
+  padding: 0 !important;
+  font-size: 15px;
+
+  h5 {
+    font-size: 2rem;
+    border-bottom: 1px solid #cacaca;
+    padding: 16px;
+  }
+  form {
+    input {
+      padding: 15px 10px;
+      font-size: 1.5rem;
+      &:focus {
+        box-shadow: none;
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+}
+
+.proceed-chackout {
+  border: 1px solid #cacaca;
+  padding: 0 !important;
+  font-size: 15px;
+
+  h5 {
+    font-size: 2rem;
+    border-bottom: 1px solid #cacaca;
+    padding: 16px;
+  }
+  ul {
+    padding: 20px;
+    padding-bottom: 0px;
+
+    li {
+      list-style: none;
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      &:nth-child(2) {
+        border-bottom: 1px solid #cacaca;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

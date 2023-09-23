@@ -24,7 +24,6 @@
 </head>
 
 <body>
-
     <!-- top header start  -->
     <div class="top-header">
         <div class="container d-flex justify-content-between">
@@ -136,27 +135,25 @@
     <!-- header end  -->
 
 
-    <!-- body start  -->
-
     <!-- Breadcumb start  -->
 
     <div class="breadcum-section">
         <div class="overlay"></div>
         <div>
-            <h2 class="text-center text-white h3">WishList</h2>
+            <h2 class="text-center text-white h3">Cart</h2>
 
 
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
 
-                <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
+                <li class="breadcrumb-item active" aria-current="page">Cart</li>
             </ol>
 
         </div>
 
     </div>
     <!-- Breadcumb end  -->
-    <!-- WishList start  -->
+    <!-- WishList + cart start  -->
 
     <div class="wishlist-section py-5">
         <div class="container">
@@ -166,10 +163,10 @@
                         <tr>
                             <th scope="col">IMAGE</th>
                             <th scope="col">Product Name </th>
-                            <th scope="col">PRICE</th>
+                            <th scope="col">UNIT PRICE</th>
 
-                            <th scope="col">STOCK STATUS </th>
-                            <th scope="col">ADD TO CART</th>
+                            <th scope="col">QTY </th>
+                            <th scope="col">SUBTOTAL</th>
                             <th scope="col">ACTION</th>
                         </tr>
                         </tr>
@@ -180,10 +177,17 @@
                             </td>
                             <td class="product-name"><a href="#">Product Name</a></td>
                             <td>$200</td>
-                            <td>In Stock</td>
-                            <td><button class="button" type="button">
-                                    ADD TO CART
-                                </button></td>
+                            <td class="quantity"><span class="d-flex justify-content-center">
+                                    <span class="quantity-container d-flex">
+                                        <button class="quantity-button decrease-btn"><i
+                                                class="fa-solid fa-minus"></i></button>
+                                        <input type="text" class="quantity-input" value="1" min="1">
+                                        <button class="quantity-button increase-btn"><i
+                                                class="fa-solid fa-plus"></i></button>
+
+                                    </span>
+                                </span></td>
+                            <td>$200</td>
                             <td><a href="#">
                                     <svg class="trush" xmlns="http://www.w3.org/2000/svg" height="1.5rem"
                                         viewBox="0 0 448 512">
@@ -198,10 +202,17 @@
                             </td>
                             <td class="product-name"><a href="#">Product Name</a></td>
                             <td>$200</td>
-                            <td>In Stock</td>
-                            <td><button class="button" type="button">
-                                    ADD TO CART
-                                </button></td>
+                            <td class="quantity"><span class="d-flex justify-content-center">
+                                    <span class="quantity-container d-flex">
+                                        <button class="quantity-button decrease-btn"><i
+                                                class="fa-solid fa-minus"></i></button>
+                                        <input type="text" class="quantity-input" value="1" min="1">
+                                        <button class="quantity-button increase-btn"><i
+                                                class="fa-solid fa-plus"></i></button>
+
+                                    </span>
+                                </span></td>
+                            <td>$200</td>
                             <td><a href="#">
                                     <svg class="trush" xmlns="http://www.w3.org/2000/svg" height="1.5rem"
                                         viewBox="0 0 448 512">
@@ -216,10 +227,17 @@
                             </td>
                             <td class="product-name"><a href="#">Product Name</a></td>
                             <td>$200</td>
-                            <td>In Stock</td>
-                            <td><button class="button" type="button">
-                                    ADD TO CART
-                                </button></td>
+                            <td class="quantity"><span class="d-flex justify-content-center">
+                                    <span class="quantity-container d-flex">
+                                        <button class="quantity-button decrease-btn"><i
+                                                class="fa-solid fa-minus"></i></button>
+                                        <input type="text" class="quantity-input" value="1" min="1">
+                                        <button class="quantity-button increase-btn"><i
+                                                class="fa-solid fa-plus"></i></button>
+
+                                    </span>
+                                </span></td>
+                            <td>$200</td>
                             <td><a href="#">
                                     <svg class="trush" xmlns="http://www.w3.org/2000/svg" height="1.5rem"
                                         viewBox="0 0 448 512">
@@ -233,11 +251,76 @@
                     </tbody>
                 </table>
             </div>
+
+
+
+
+            <div class="row py-5">
+                <div class="col-6">
+                    <a href="#"><button class="button-1">Continue shopping</button></a> </div>
+                <div class="col-6 d-flex justify-content-end"><a href="#"> <button class="button-1 ">Continue
+                            shopping</button></a></div>
+
+            </div>
+
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <div class="cupon-area">
+                        <h5> Use Cupon Code </h5>
+                        <form action="" class="p-4">
+                            <div class="mb-3">
+                                <label for="cupon-code" class="form-label">Have a Cupon Code?</label>
+                                <input type="text" class="form-control" id="cupon-code" placeholder="Enter here...">
+                            </div>
+                            <div>
+                                <button class="button-1" type="submit" class="my-btn">Apply</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="proceed-chackout">
+                        <h5> Order Total</h5>
+                        <ul>
+                            <li>
+                                <b>Sub Total: </b>
+                                <span>$200.00</span>
+                            </li>
+                            <li>
+                                <b>Taxes</b>
+                                <span>$1.00</span>
+
+                            </li>
+                            <li>
+                                <b>Grand Total:</b>
+                                <span>$201.00</span>
+                            </li>
+                        </ul>
+                        <div class="px-4 pb-5 d-grid">
+
+                            <button class="button-1">proceed to chackout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- WishList end  -->
 
-    <!-- body end  -->
+
+
+
+
+
+    <!-- cart end  -->
+
+
+
+
+
+
+
 
 
 
@@ -338,14 +421,6 @@
     </div>
 
     <!-- offcanvas cart end  -->
-
-
-
-
-
-
-
-
     <!-- prefooter start  -->
 
 

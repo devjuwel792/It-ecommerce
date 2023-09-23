@@ -19,12 +19,122 @@
     }
   }
   .top-header-right {
-    div {
-      margin: 0 10px;
+    .social-icon {
+      div {
+        margin: 0 10px;
+      }
+      a {
+        font-size: 1.5rem;
+        color: white;
+      }
+    }
+
+    .dropdown {
+      padding-left: 20px;
+      .dropdown-btn {
+        color: #ffffff !important;
+        span i {
+          color: $primary-color;
+        }
+      }
+
+      &:hover {
+        .dropdown-menu {
+          display: block;
+          animation: slide-up 0.5s;
+        }
+      }
+      .dropdown-menu {
+        display: none;
+
+        border: 0;
+        z-index: 99999;
+        border-radius: 0;
+        width: 139px;
+
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        li {
+          padding: 3px 20px 3px 0;
+          a {
+            font-size: 1.6rem;
+            &:hover {
+              color: $primary-color;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+header {
+  background-color: #ffffff;
+  .left-item {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      width: 120px;
+      overflow: hidden;
+      @include v-center;
+      @include res(800px) {
+        height: 80px;
+      }
+    }
+    .menu {
+      a {
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding-left: 20px;
+        display: inline-block;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      @include res(800px) {
+        display: none;
+      }
+    }
+  }
+  .right-item {
+    // background-color: transparent;
+    a:nth-child(1) {
+      display: none;
+      @include res(800px) {
+        display: inline-block;
+      }
     }
     a {
-      font-size: 1.5rem;
-      color: white;
+      display: inline-block;
+      padding: 2px 7px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+      font-size: 2rem;
+      margin-left: 20px;
+      @include res(800px) {
+        margin-left: 10px;
+      }
+      &:hover {
+        color: $primary-color;
+      }
+
+      .badge {
+        background-color: $primary-color;
+        font-size: 1.3rem;
+      }
     }
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }

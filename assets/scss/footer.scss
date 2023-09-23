@@ -1,0 +1,195 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+
+.pre-footer {
+  margin-top: 60px;
+  font-size: 1.5rem;
+  @include center-center;
+  height: 180px;
+  @include res(800px) {
+    height: 250px;
+  }
+  background-color: $color-99;
+  .text {
+    @include res(800px) {
+      padding-bottom: 20px;
+    }
+    .icon {
+      font-size: 56px;
+      color: $primary-color;
+    }
+    .content {
+      padding-left: 20px;
+
+      h2 {
+        font-size: 3.2rem;
+        color: #fff;
+      }
+      p {
+        font-size: 1.5rem;
+        color: #cacaca;
+      }
+    }
+  }
+  .email-box {
+    @include h-center;
+    input {
+      border-radius: 0;
+      max-width: 70%;
+      font-size: 1.7rem;
+      background: transparent !important;
+      border: 1px solid #6f6f6f;
+      font-weight: 500;
+      &:focus {
+        color: #ffff;
+        box-shadow: none;
+        border: 1px solid $primary-color;
+        font-size: 1.7rem;
+      }
+    }
+    a {
+      border: none;
+      padding: 10px;
+      background-color: $primary-color;
+      text-align: center;
+      font-size: 1.6rem;
+      @include res(500px) {
+        font-size: 1rem;
+      }
+      //   width: 115px !important;
+      display: block;
+      text-transform: uppercase;
+      color: #fff;
+      @include center-center;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+footer {
+  font-size: 1.5rem;
+
+  .footer-address {
+    padding-left: 5px;
+    h5 {
+      color: #fff;
+      font-size: 2rem;
+      padding-bottom: 20px;
+    }
+    div {
+      gap: 10px;
+      font-size: 1.5rem;
+      span {
+        color: $primary-color;
+      }
+      p {
+        color: #6f6f6f;
+      }
+    }
+    .footer-social {
+      padding: 10px 0;
+      a {
+        height: 30px;
+        width: 30px;
+        // background-color: red;
+        display: inline-block;
+        @include center-center;
+        border-radius: 2px;
+        color: #fff;
+        &.facebook {
+          background-color: #3b5998;
+        }
+        &.twitter {
+          background-color: #00acee;
+        }
+        &.instagram {
+          background: radial-gradient(
+              circle farthest-corner at 32% 106%,
+              #ffe17d 0,
+              #ffcd69 10%,
+              #fa9137 28%,
+              #eb4141 42%,
+              transparent 82%
+            ),
+            linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
+        }
+        &.linkedin {
+          background-color: #0a66c2;
+        }
+      }
+    }
+  }
+
+  @mixin footer-menu {
+    a {
+      color: #6f6f6f;
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+  .footer-menu {
+    padding-left: 5px;
+    h5 {
+      color: #fff;
+      font-size: 2rem;
+      padding-bottom: 20px;
+    }
+    ul {
+      padding: 0;
+      li {
+        list-style-type: none;
+        padding: 5px 0;
+        @include footer-menu();
+      }
+    }
+  }
+  .footer-middle {
+    margin-top: 40px !important;
+    h5 {
+      font-size: 1.5rem;
+    }
+    span {
+      @include footer-menu();
+      cursor: pointer;
+
+      &:nth-child(odd)::before {
+        content: "|";
+        padding: 0px 10px;
+      }
+
+      &:nth-child(odd)::after {
+        content: "|";
+        padding: 0px 10px;
+      }
+      &:last-child::after {
+        content: " ";
+        padding: 0px 10px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 70px;
+    // padding-bottom: 15px;
+    height: 70px;
+    .payment-way {
+      @include res(500px) {
+        @include h-center;
+      }
+    }
+    p {
+      color: #6f6f6f;
+      @include res(500px) {
+        text-align: center;
+      }
+      a {
+        color: rgb(11, 11, 135);
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -17,10 +17,113 @@
 .top-header .top-header-left a {
   color: #fff;
 }
-.top-header .top-header-right div {
+.top-header .top-header-right .social-icon div {
   margin: 0 10px;
 }
-.top-header .top-header-right a {
+.top-header .top-header-right .social-icon a {
   font-size: 1.5rem;
   color: white;
+}
+.top-header .top-header-right .dropdown {
+  padding-left: 20px;
+}
+.top-header .top-header-right .dropdown .dropdown-btn {
+  color: #ffffff !important;
+}
+.top-header .top-header-right .dropdown .dropdown-btn span i {
+  color: #7caf02;
+}
+.top-header .top-header-right .dropdown:hover .dropdown-menu {
+  display: block;
+  animation: slide-up 0.5s;
+}
+.top-header .top-header-right .dropdown .dropdown-menu {
+  display: none;
+  border: 0;
+  z-index: 99999;
+  border-radius: 0;
+  width: 139px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.top-header .top-header-right .dropdown .dropdown-menu li {
+  padding: 3px 20px 3px 0;
+}
+.top-header .top-header-right .dropdown .dropdown-menu li a {
+  font-size: 1.6rem;
+}
+.top-header .top-header-right .dropdown .dropdown-menu li a:hover {
+  color: #7caf02;
+  background-color: transparent;
+}
+
+header {
+  background-color: #ffffff;
+}
+header .left-item {
+  display: flex;
+  align-items: center;
+}
+header .left-item .logo {
+  width: 120px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  header .left-item .logo {
+    height: 80px;
+  }
+}
+header .left-item .menu a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-left: 20px;
+  display: inline-block;
+}
+header .left-item .menu a:hover {
+  color: #7caf02;
+}
+@media (max-width: 800px) {
+  header .left-item .menu {
+    display: none;
+  }
+}
+header .right-item a:nth-child(1) {
+  display: none;
+}
+@media (max-width: 800px) {
+  header .right-item a:nth-child(1) {
+    display: inline-block;
+  }
+}
+header .right-item a {
+  display: inline-block;
+  padding: 2px 7px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+@media (max-width: 800px) {
+  header .right-item a {
+    margin-left: 10px;
+  }
+}
+header .right-item a:hover {
+  color: #7caf02;
+}
+header .right-item a .badge {
+  background-color: #7caf02;
+  font-size: 1.3rem;
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }/*# sourceMappingURL=header.css.map */
