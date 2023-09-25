@@ -1,0 +1,46 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+
+.product-list-card {
+  padding: 30px 20px 40px;
+  border: 1px solid #cacaca;
+  h5 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 15px;
+  }
+  .product-list-item {
+    margin-top: 15px;
+    .product-thambmail {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #cacaca;
+      padding: 3px;
+    }
+    .product-list-content {
+      h3 {
+        font-size: 1.5rem;
+        a {
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+      .star {
+        font-size: 1.2rem;
+        margin: 5px 0;
+      }
+      .price {
+        span {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: $primary-color;
+        }
+        del {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

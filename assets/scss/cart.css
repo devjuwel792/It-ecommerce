@@ -147,4 +147,8 @@
   border-bottom: 1px solid #cacaca;
   padding-bottom: 20px;
   margin-bottom: 20px;
-}/*# sourceMappingURL=cart.css.map */
+}
+
+.offcanvas-header {
+  padding: 20px 50px 20px 30px;
+} /*# sourceMappingURL=cart.css.map */

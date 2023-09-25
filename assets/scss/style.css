@@ -622,6 +622,9 @@ footer .footer-bottom p a {
   margin-bottom: 20px;
 }
 
+.offcanvas-header {
+  padding: 20px 50px 20px 30px;
+} 
 html {
   font-size: 62.5%;
 }
