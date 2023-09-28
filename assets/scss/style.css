@@ -163,12 +163,12 @@ header .right-item a .badge {
     transform: none;
   }
 }
-.card {
+.product-card {
   border-radius: 0;
   position: relative;
   padding-bottom: 20px;
 }
-.card .batch {
+.product-card .batch {
   width: 70px;
   height: 30px;
   display: flex;
@@ -179,7 +179,7 @@ header .right-item a .badge {
   font-size: 1.6rem;
   text-transform: uppercase;
 }
-.card .wishlist-btn {
+.product-card .wishlist-btn {
   height: 30px;
   width: 30px;
   background-color: #7caf02;
@@ -191,12 +191,12 @@ header .right-item a .badge {
   font-size: 1.6rem;
   color: #fff;
   cursor: pointer;
-  z-index: 999999999;
+  z-index: 9;
   position: absolute;
   top: 5%;
   right: 5%;
 }
-.card .quick-view {
+.product-card .quick-view {
   height: 30px;
   width: 30px;
   background-color: #7caf02;
@@ -208,7 +208,7 @@ header .right-item a .badge {
   font-size: 1.6rem;
   color: #fff;
   cursor: pointer;
-  z-index: 999999999;
+  z-index: 9;
   position: absolute;
   top: 16%;
   right: 5%;
@@ -216,17 +216,18 @@ header .right-item a .badge {
   opacity: 0;
   transition: 0.6s;
 }
-.card .card-img {
+.product-card .card-img {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.card .card-img img {
-  height: 18rem;
-  width: 18rem;
+.product-card .card-img img {
+  height: 25rem;
+  width: 25rem;
+  margin-bottom: 20px;
 }
-.card .card-img .add-to-cart {
+.product-card .card-img .add-to-cart {
   display: block;
   padding: 10px 15px;
   background-color: #7caf02;
@@ -244,36 +245,36 @@ header .right-item a .badge {
   transform: translateY(14px);
   transition: 0.6s;
 }
-.card:hover {
+.product-card:hover {
   border: 1px solid #7caf02;
 }
-.card:hover .add-to-cart {
+.product-card:hover .add-to-cart {
   display: block;
   opacity: 1;
   transform: translateY(0);
 }
-.card:hover .quick-view {
+.product-card:hover .quick-view {
   opacity: 1;
   transform: translatex(0px);
 }
-.card:hover img {
+.product-card:hover img {
   transform: scale(1.1) rotate(5deg);
   transition: 0.6s;
 }
-.card .card-body .star {
+.product-card .card-body .star {
   color: #ffc107;
   font-size: 1.6rem;
 }
-.card .card-body .card-title {
+.product-card .card-body .card-title {
   font-size: 1.6rem;
   font-weight: bolder;
 }
-.card .card-body .card-price {
+.product-card .card-body .card-price {
   font-size: 2.4rem;
   color: #7caf02;
   font-weight: 500;
 }
-.card .card-body del {
+.product-card .card-body del {
   font-size: 1.6rem;
   color: gray;
 }
@@ -546,6 +547,7 @@ footer .footer-bottom p a {
 }
 
 .quantity .quantity-container input {
+  font-size: 1.5rem;
   width: 80px;
   padding: 8px 10px;
   text-align: center;
@@ -639,6 +641,9 @@ a {
   color: #272727;
   cursor: pointer;
 }
+a:hover {
+  color: #7caf02;
+}
 
 img {
   max-width: 100%;
@@ -649,6 +654,25 @@ img {
   font-weight: 700;
   line-height: 38px;
   font-family: "Roboto", sans-serif;
+}
+
+.card {
+  border-radius: 0;
+}
+.card:hover {
+  border-color: #7caf02 !important;
+}
+
+header {
+  z-index: 999 !important;
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
 }
 
 .button {
@@ -662,6 +686,19 @@ img {
 }
 .button:hover {
   background-color: #272727;
+}
+
+.button-2 {
+  padding: 12px 30px;
+  background-color: #1e1b38;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+.button-2:hover {
+  opacity: 0.8;
 }
 
 .wishlist-section {
@@ -684,7 +721,6 @@ img {
   color: white;
 }
 .wishlist-section .table-responsive .table tbody tr td.product-img {
-  height: 120px;
   width: 120px;
 }
 .wishlist-section .table-responsive .table tbody tr td.product-img img {
@@ -699,4 +735,199 @@ img {
 }
 .wishlist-section .table-responsive .table tbody tr td a .trush:hover {
   fill: #7caf02;
+}
+
+.service .service-content .service-icon {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #7caf02;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.service .service-content .service-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.service .service-content h5 {
+  font-size: 1.6rem;
+}
+.service .service-content p {
+  font-size: 1.5rem;
+  color: #6f6f6f;
+}
+
+.banner-section .row {
+  margin: 70px 0;
+}
+.banner-section .banner-box {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.banner-section .banner-box img {
+  width: 100%;
+}
+.banner-section .banner-box:hover img {
+  transform: scale(1.2);
+  transition: 0.6s;
+}
+
+.product-grid-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+@media (max-width: 1000px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .deals-hot .product-list-card {
+    margin-top: 20px;
+  }
+}
+
+.owl-nav {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.owl-nav span {
+  color: #ffffff;
+  background-color: #7caf02;
+  display: inline-block;
+  margin-right: 23px;
+  width: 25px;
+}
+
+.summer-sel {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #fff;
+  background-image: url(../images/banner-slider/slider-4.jpg);
+  border-radius: 9px;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+.summer-sel .summer-sel-content {
+  width: 400px;
+  z-index: 9999;
+  padding-right: 20px;
+}
+.summer-sel .summer-sel-content div {
+  font-size: 2.4rem;
+}
+.summer-sel .summer-sel-content h5 {
+  font-size: 4rem;
+}
+.summer-sel .summer-sel-content p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .product-categories .product-list-card {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .product-categories .product-list-card .mini-banner-two {
+    padding-bottom: 20px;
+  }
+}
+
+.mini-banner-two {
+  background-image: url(../images/banner-slider/slider-3.jpg);
+  background-size: conver;
+  background-position: center;
+  color: #fff;
+}
+.mini-banner-two .banner-content h5 {
+  font-size: 1.5rem;
+}
+.mini-banner-two .banner-content h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.mini-banner-two .banner-content h6 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+.mini-banner-two .banner-content h6 span {
+  color: #7caf02;
+  font-weight: 500;
+}
+
+.call-section {
+  background-color: #7caf02;
+  padding: 35px 0;
+}
+.call-section h3 {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.call-section a.button-2:hover {
+  color: #fff;
+}
+
+.blog-card .blog-card-img {
+  position: relative;
+}
+.blog-card .blog-card-img .blog-date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.5rem;
+  background-color: white;
+  padding: 10px 20px;
+}
+.blog-card .blog-card-img:hover {
+  color: black;
+}
+.blog-card .blog-content {
+  padding: 20px;
+}
+.blog-card .blog-content h2 a {
+  font-size: 2.4rem;
+  padding-bottom: 10px;
+}
+.blog-card .blog-content h2 a:hover {
+  color: #7caf02;
+}
+.blog-card .blog-content p {
+  font-size: 1.5rem;
+}
+.blog-card .blog-footer {
+  padding: 20px;
+}
+.blog-card .blog-footer .profile-img {
+  height: 60px;
+  width: 60px;
+}
+.blog-card .blog-footer .profile-img img {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #7caf02;
+}
+.blog-card .blog-footer .read-more a {
+  font-size: 4rem;
+  color: #7caf02;
 }/*# sourceMappingURL=style.css.map */

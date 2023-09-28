@@ -13,9 +13,10 @@
   font-size: 1.6rem;
   color: #fff;
   cursor: pointer;
-  z-index: 999999999;
+  z-index:9;
 }
-.card {
+
+.product-card {
   border-radius: 0;
   position: relative;
   padding-bottom: 20px;
@@ -49,8 +50,11 @@
     @include center-center;
 
     img {
-      height: 18rem;
-      width: 18rem;
+      height: 25rem;
+      width: 25rem;
+
+      margin-bottom: 20px;
+
       //   height: 100%;
       //   width: 100%;
     }

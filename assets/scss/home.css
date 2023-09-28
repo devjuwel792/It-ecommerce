@@ -1,9 +1,9 @@
-.card {
+.product-card {
   border-radius: 0;
   position: relative;
   padding-bottom: 20px;
 }
-.card .batch {
+.product-card .batch {
   width: 70px;
   height: 30px;
   display: flex;
@@ -14,7 +14,7 @@
   font-size: 1.6rem;
   text-transform: uppercase;
 }
-.card .wishlist-btn {
+.product-card .wishlist-btn {
   height: 30px;
   width: 30px;
   background-color: #7caf02;
@@ -26,12 +26,12 @@
   font-size: 1.6rem;
   color: #fff;
   cursor: pointer;
-  z-index: 999999999;
+  z-index: 9;
   position: absolute;
   top: 5%;
   right: 5%;
 }
-.card .quick-view {
+.product-card .quick-view {
   height: 30px;
   width: 30px;
   background-color: #7caf02;
@@ -43,7 +43,7 @@
   font-size: 1.6rem;
   color: #fff;
   cursor: pointer;
-  z-index: 999999999;
+  z-index: 9;
   position: absolute;
   top: 16%;
   right: 5%;
@@ -51,17 +51,18 @@
   opacity: 0;
   transition: 0.6s;
 }
-.card .card-img {
+.product-card .card-img {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.card .card-img img {
-  height: 18rem;
-  width: 18rem;
+.product-card .card-img img {
+  height: 25rem;
+  width: 25rem;
+  margin-bottom: 20px;
 }
-.card .card-img .add-to-cart {
+.product-card .card-img .add-to-cart {
   display: block;
   padding: 10px 15px;
   background-color: #7caf02;
@@ -79,36 +80,36 @@
   transform: translateY(14px);
   transition: 0.6s;
 }
-.card:hover {
+.product-card:hover {
   border: 1px solid #7caf02;
 }
-.card:hover .add-to-cart {
+.product-card:hover .add-to-cart {
   display: block;
   opacity: 1;
   transform: translateY(0);
 }
-.card:hover .quick-view {
+.product-card:hover .quick-view {
   opacity: 1;
   transform: translatex(0px);
 }
-.card:hover img {
+.product-card:hover img {
   transform: scale(1.1) rotate(5deg);
   transition: 0.6s;
 }
-.card .card-body .star {
+.product-card .card-body .star {
   color: #ffc107;
   font-size: 1.6rem;
 }
-.card .card-body .card-title {
+.product-card .card-body .card-title {
   font-size: 1.6rem;
   font-weight: bolder;
 }
-.card .card-body .card-price {
+.product-card .card-body .card-price {
   font-size: 2.4rem;
   color: #7caf02;
   font-weight: 500;
 }
-.card .card-body del {
+.product-card .card-body del {
   font-size: 1.6rem;
   color: gray;
 }/*# sourceMappingURL=home.css.map */

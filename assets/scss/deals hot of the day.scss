@@ -1,0 +1,62 @@
+@import "./variable";
+
+.hot-product-slider {
+  padding: 10px;
+  h5 {
+    font-size: 2rem;
+    border-bottom: 1px solid #cacaca;
+    padding: 10px 0 20px;
+  }
+  .counter-area {
+    padding: 20px 0;
+    .timer {
+    
+      gap: 10px;
+   
+      .time-block {
+        padding: 10px;
+        text-align: center;
+        background-color: #272727;
+        .time {
+          color: #fff;
+          font-size: 2.4rem;
+        }
+        .label {
+          color: $primary-color;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .product-slider-content {
+    h4 {
+      a {
+        font-size: 2.4rem;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+    .product-price {
+      span {
+        font-size: 2.4rem;
+        color: $primary-color;
+        font-weight: bold;
+      }
+      del {
+        font-size: 1.5rem;
+        padding-left: 15px;
+      }
+    }
+    .star {
+      font-size: 1.5rem;
+      .reviews {
+        font-size: 1.2rem;
+        color: $primary-color;
+      }
+    }
+    p{
+        font-size: 1.5rem;
+    }
+  }
+}

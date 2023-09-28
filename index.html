@@ -12,6 +12,12 @@
 
     <!-- Bootstrap end  -->
 
+
+    <!-- owl carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- font-awesome start  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -21,136 +27,1607 @@
     <link rel="stylesheet" href="./assets/scss/home.css">
     <link rel="stylesheet" href="./assets/scss/footer.css">
     <link rel="stylesheet" href="./assets/scss/product-list-card.css">
+    <link rel="stylesheet" href="./assets/scss/deals hot of the day.css">
 </head>
 
 <body>
 
- 
-    <div class="card m-5 overflow-hidden" style="width:25rem;">
-        <div class="batch">sale</div>
-        <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
-        <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+    <!-- top header start  -->
+    <div class="top-header">
+        <div class="container d-flex justify-content-between">
+            <div class="top-header-left ">
 
-        <div class="card-img">
-            <img src="./assets/images/product/1.png" class="card-img-top" alt="...">
-            <a class="add-to-cart " href="#">Add to Cart</a>
+                <div class="top-header-email pe-4 "><a href="mailto:info12@example.com">
+                        <i class="fa-regular fa-envelope"></i> info12@example.com
+                    </a>
+
+                </div>
+                <div class="top-header-address">
+                    <i class="fa-solid fa-location-dot"></i> California, TX 70240
+                </div>
+
+            </div>
+            <div class="top-header-right d-flex ">
+                <div class="social-icon d-flex">
+
+                    <div>
+                        <a href="#">
+                            <span><i class="fa-brands fa-facebook-f"></i></span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>
+                                <i class="fa-brands fa-twitter"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span>
+                                <i class="fa-brands fa-youtube"></i>
+                            </span>
+                        </a>
+                    </div>
+
+
+
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn" role="button" id="dropdownMenuLink" aria-expanded="false">
+
+                        English <span><i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                        <li><a class="dropdown-item" href="#">Arabic</a></li>
+                        <li><a class="dropdown-item" href="#">France</a></li>
+                        <li><a class="dropdown-item" href="#">Engilsh</a></li>
+                        <li><a class="dropdown-item" href="#">Bangla</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="card-body text-center">
-            <div class="star">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-regular fa-star-half-stroke"></i></span>
-            </div>
-            <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+    </div>
 
+    <!-- top header end  -->
+    <!-- header start  -->
+
+    <header class="sticky-top">
+        <div class="container  py-4 d-flex justify-content-between align-items-center">
+            <div class="left-item">
+                <div class="logo">
+                    <a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+                </div>
+                <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="#">Pages +</a>
+                    <a href="shop.html">Shop +</a>
+                    <a href="blog.html">Blog +</a>
+                </div>
+            </div>
+            <div class="right-item">
+                <a href="#">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </a>
+                <a href="#" class="position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <span><i class="fa-solid fa-cart-plus "></i></span>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill ">3</span>
+
+                </a>
+                <a href="wishlist.html" class="position-relative">
+                    <span><i class="fa-regular fa-heart"></i></span>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill ">3</span>
+                </a>
+                <a href="#"><span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span></a>
+                <a href="login.html"><span>
+                        <i class="fa-regular fa-user"></i>
+                    </span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- header end  -->
+
+
+
+
+
+
+
+
+    <!-- service section  start-->
+    <div class="service container my-5">
+        <div class="row bg-white">
+            <div class="col-md-3 text-center service-content py-4">
+                <span class="service-icon"><i class="fa-solid fa-truck"></i></span>
+                <h5>Free Shipping</h5>
+                <p>Free UK shipping when you spend £30.</p>
+            </div>
+            <div class="col-md-3 text-center service-content py-4">
+                <span class="service-icon"><i class="fa-solid fa-truck"></i></span>
+                <h5>Free Shipping</h5>
+                <p>Free UK shipping when you spend £30.</p>
+            </div>
+            <div class="col-md-3 text-center service-content py-4">
+                <span class="service-icon"><i class="fa-solid fa-truck"></i></span>
+                <h5>Free Shipping</h5>
+                <p>Free UK shipping when you spend £30.</p>
+            </div>
+            <div class="col-md-3 text-center service-content py-4">
+                <span class="service-icon"><i class="fa-solid fa-truck"></i></span>
+                <h5>Free Shipping</h5>
+                <p>Free UK shipping when you spend £30.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- service section  end-->
+
+    <!-- banner section start  -->
+    <div class="banner-section container">
+        <div class="row p-0">
+            <div class="col-md-6 pt-3">
+                <div class="banner-box">
+                    <a href="#"><img src="./assets/images/banner/b-1.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-6 pt-3">
+                <div class="banner-box">
+                    <a href="#"><img src="./assets/images/banner/b-2.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner section end  -->
+
+    <!-- product gird start  -->
+    <div class="container mt-5">
+        <div class="my-5 d-flex align-items-center justify-content-between">
             <div>
-                <span class="card-price">$200</span>
-                <del>$210</del>
-
+                <h3 class="product-grid-title">Popular Product</h3>
             </div>
-
-
-        </div>
-    </div>
-<div class="row container p-5 my-5">
-    <div class="col-lg-3 col-md-6">
-         <div class="product-list-card bg-white ">
-        <h5> Hot Deals</h5>
-        <div class="product-list-item d-flex align-items-center gap-5">
-            <div class="product-thambmail  border-4">
-                <img src="./assets/images/product/2.png" alt="">
-            </div>
-            <div class="product-list-content">
-                
-                <h3><a href="#">Fresh Red Seedless</a></h3>
-                <div class="star">
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-
-                </div>
-                <div class="price">
-                     <span >$200</span>
-                <del>$210</del>
-                </div>
-               
-            </div>
-        </div>
-        <div class="product-list-item d-flex align-items-center gap-5">
-            <div class="product-thambmail  border-4">
-                <img src="./assets/images/product/1.png" alt="">
-            </div>
-            <div class="product-list-content">
-                
-                <h3><a href="#">Fresh Red Seedless</a></h3>
-                <div class="star">
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-
-                </div>
-                <div class="price">
-                     <span >$200</span>
-                <del>$210</del>
-                </div>
-               
-            </div>
-        </div>
-        <div class="product-list-item d-flex align-items-center gap-5">
-            <div class="product-thambmail  border-4">
-                <img src="./assets/images/product/5.png" alt="">
-            </div>
-            <div class="product-list-content">
-                
-                <h3><a href="#">Fresh Red Seedless</a></h3>
-                <div class="star">
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-
-                </div>
-                <div class="price">
-                     <span >$200</span>
-                <del>$210</del>
-                </div>
-               
-            </div>
-        </div>
-        <div class="product-list-item d-flex align-items-center gap-5">
-            <div class="product-thambmail  border-4">
-                <img src="./assets/images/product/6.png" alt="">
-            </div>
-            <div class="product-list-content">
-                
-                <h3><a href="#">Fresh Red Seedless</a></h3>
-                <div class="star">
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
-
-                </div>
-                <div class="price">
-                     <span >$200</span>
-                <del>$210</del>
-                </div>
-               
+            <div>
+                <button class="button-1 m-0"> View All <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
             </div>
         </div>
     </div>
+
+
+    <div class="product-grid container mb-5">
+
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="./assets/images/product/1.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="./assets/images/product/2.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="   ./assets/images/product/5.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="   ./assets/images/product/6.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="   ./assets/images/product/6.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="   ./assets/images/product/2.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="   ./assets/images/product/5.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="   ./assets/images/product/6.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
     </div>
-</div>
-   
+    <!-- product gird end  -->
+
+
+
+
+
+
+
+
+    <!-- Deals Hot of the day -->
+
+    <div class="container py-5 deals-hot">
+        <div class="row">
+            <div class="col-lg-9 card ">
+                <div class="hot-product-slider ">
+                    <h5>Deals Hot Of The Day</h5>
+                    <div class="counter-area ">
+                        <div class="timer d-flex justify-content-md-end justify-content-center">
+                            <div class="time-block">
+                                <span class="d-block time" id="days">00</span>
+                                <span class="label">Days</span>
+                            </div>
+                            <div class="time-block">
+                                <span class="d-block time" id="hours">00</span>
+                                <span class="label">Hours</span>
+                            </div>
+                            <div class="time-block">
+                                <span class="d-block time" id="minutes">00</span>
+                                <span class="label">Minutes</span>
+                            </div>
+                            <div class="time-block">
+                                <span class="d-block time" id="seconds">00</span>
+                                <span class="label">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- item start -->
+                    <div class="owl-carousel ">
+                        <div class="row hot-item">
+                            <div class="col-md-5 d-flex justify-content-center align-items-center ">
+                                <div class="product-img">
+                                    <img src="./assets/images/product/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-7 ps-4">
+                                <div class="product-slider-content">
+                                    <h4><a href="#">Fresh purnava Omega 3 Enri... </a></h4>
+                                    <div class="product-price">
+                                        <span>$200</span>
+                                        <del>$210</del>
+                                    </div>
+                                    <div class="star py-3">
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                                        <div class="reviews d-inline-block ">
+                                            <span>
+                                                ( 20 Reviews )
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia,
+                                        repudiandae
+                                        odit modi consequatur ex libero aliquam quos cumque vitae recusandae. Sunt
+                                        exercitationem facere dolores repudiandae animi dicta minus ipsam necessitatibus
+                                        asperiores quis a ipsa molestias illum quae, in tempore.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="row py-3">
+                                        <div class="col-6 align-self-center ">
+                                            <div class="quantity"><span class="d-flex justify-content-start">
+                                                    <span class="quantity-container d-flex">
+                                                        <button class="quantity-button decrease-btn"><i
+                                                                class="fa-solid fa-minus"></i></button>
+                                                        <input type="text" class="quantity-input" value="1" min="1">
+                                                        <button class="quantity-button increase-btn"><i
+                                                                class="fa-solid fa-plus"></i></button>
+
+                                                    </span>
+                                                </span></div>
+                                        </div>
+                                        <div class="col-6 my-3">
+                                            <button class="button-1 m-0">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span> add to
+                                                cart</button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row hot-item">
+                            <div class="col-md-5 d-flex justify-content-center align-items-center ">
+                                <div class="product-img">
+                                    <img src="./assets/images/product/2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-7 ps-4">
+                                <div class="product-slider-content">
+                                    <h4><a href="#">Fresh purnava Omega 3 Enri... </a></h4>
+                                    <div class="product-price">
+                                        <span>$200</span>
+                                        <del>$210</del>
+                                    </div>
+                                    <div class="star py-3">
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                                        <div class="reviews d-inline-block ">
+                                            <span>
+                                                ( 20 Reviews )
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia,
+                                        repudiandae
+                                        odit modi consequatur ex libero aliquam quos cumque vitae recusandae. Sunt
+                                        exercitationem facere dolores repudiandae animi dicta minus ipsam necessitatibus
+                                        asperiores quis a ipsa molestias illum quae, in tempore.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="row py-3">
+                                        <div class="col-6 align-self-center ">
+                                            <div class="quantity"><span class="d-flex justify-content-start">
+                                                    <span class="quantity-container d-flex">
+                                                        <button class="quantity-button decrease-btn"><i
+                                                                class="fa-solid fa-minus"></i></button>
+                                                        <input type="text" class="quantity-input" value="1" min="1">
+                                                        <button class="quantity-button increase-btn"><i
+                                                                class="fa-solid fa-plus"></i></button>
+
+                                                    </span>
+                                                </span></div>
+                                        </div>
+                                        <div class="col-6 my-3">
+                                            <button class="button-1 m-0">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span> add to
+                                                cart</button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row hot-item">
+                            <div class="col-md-5 d-flex justify-content-center align-items-center ">
+                                <div class="product-img">
+                                    <img src="./assets/images/product/5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-7 ps-4">
+                                <div class="product-slider-content">
+                                    <h4><a href="#">Fresh purnava Omega 3 Enri... </a></h4>
+                                    <div class="product-price">
+                                        <span>$200</span>
+                                        <del>$210</del>
+                                    </div>
+                                    <div class="star py-3">
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                        <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                                        <div class="reviews d-inline-block ">
+                                            <span>
+                                                ( 20 Reviews )
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia,
+                                        repudiandae
+                                        odit modi consequatur ex libero aliquam quos cumque vitae recusandae. Sunt
+                                        exercitationem facere dolores repudiandae animi dicta minus ipsam necessitatibus
+                                        asperiores quis a ipsa molestias illum quae, in tempore.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="row py-3">
+                                        <div class="col-6 align-self-center ">
+                                            <div class="quantity"><span class="d-flex justify-content-start">
+                                                    <span class="quantity-container d-flex">
+                                                        <button class="quantity-button decrease-btn"><i
+                                                                class="fa-solid fa-minus"></i></button>
+                                                        <input type="text" class="quantity-input" value="1" min="1">
+                                                        <button class="quantity-button increase-btn"><i
+                                                                class="fa-solid fa-plus"></i></button>
+
+                                                    </span>
+                                                </span></div>
+                                        </div>
+                                        <div class="col-6 my-3">
+                                            <button class="button-1 m-0">
+                                                <span><i class="fa-solid fa-cart-shopping"></i></span> add to
+                                                cart</button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- item end  -->
+
+
+
+                </div>
+            </div>
+            <div class="col-lg-3 align-self-baseline">
+                <!-- Top Rate Product start -->
+                <div class="product-list-card bg-white ">
+                    <h5> Top Rated Product</h5>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/2.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/1.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/vegetable.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/5.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/6.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Top Rate Product end -->
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container summer-sel ">
+        <div class="overlay"></div>
+        <div class="d-flex justify-content-end align-items-center h-100">
+
+
+            <div class="summer-sel-content">
+
+                <div class="h4"> summer sell</div>
+                <h5> 29% OFF</h5>
+                <P>Free on all your order, Free Shipping and 20 days mony
+                    back guarantee
+                </P>
+                <button class="button-2">Shop now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- prodcut-categories  -->
+
+    <div class="container product-categories">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+
+
+                <!-- Top Rate Product  -->
+                <div class="product-list-card bg-white ">
+                    <h5> Top Rated Product</h5>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/1.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/2.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/5.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/6.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- end  -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+
+
+                <!-- Top Rate Product  -->
+                <div class="product-list-card bg-white ">
+                    <h5> Best Seller</h5>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/2.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/1.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/5.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/6.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- end  -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+
+
+                <!-- Top Rate Product  -->
+                <div class="product-list-card h-100 bg-white ">
+                    <h5> Hot Deals</h5>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/2.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/1.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/5.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list-item d-flex align-items-center gap-5">
+                        <div class="product-thambmail  border-4">
+                            <img src="./assets/images/product/6.png" alt="">
+                        </div>
+                        <div class="product-list-content">
+
+                            <h3><a href="#">Fresh Red Seedless</a></h3>
+                            <div class="star">
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+                                <span><i class="fa-solid fa-star" style="color: #ffc107;"></i></span>
+
+                            </div>
+                            <div class="price">
+                                <span>$200</span>
+                                <del>$210</del>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- end  -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="mini-banner-two h-100 p-4">
+                    <div class="banner-content">
+                        <h5>75% Fat Free</h5>
+                        <h3>Low-Fat Meet</h3>
+                        <h6>Started a <span>$29.99</span></h6>
+                        <button type="button" class="button-2">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- product gird start  -->
+    <div class="container pt-5">
+        <div class="my-5 d-flex align-items-center justify-content-between">
+            <div>
+                <h3 class="product-grid-title">Feature Products</h3>
+            </div>
+            <div>
+                <button class="button-1 m-0"> View All <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product-grid container pb-5">
+
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="./assets/images/product/1.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="   ./assets/images/product/2.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="   ./assets/images/product/5.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="   ./assets/images/product/6.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="./assets/images/product/1.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="   ./assets/images/product/6.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="   ./assets/images/product/2.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="product-card card  overflow-hidden">
+            <div class="batch">sale</div>
+            <div class="wishlist-btn"><i class="fa-regular fa-heart"></i></div>
+            <div class="quick-view"><i class="fa-regular fa-eye"></i></div>
+
+            <div class="card-img">
+                <img src="./assets/images/product/1.png" class="card-img-top" alt="...">
+                <a class="add-to-cart " href="#">Add to Cart</a>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                </div>
+                <h5 class="card-title py-3">Purnava Omega 3 Enri...</h5>
+
+                <div>
+                    <span class="card-price">$200</span>
+                    <del>$210</del>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- product gird end  -->
+
+
+    <!-- call section start -->
+    <div class=" call-section my-5">
+        <div class="row container m-auto">
+            <div class="col-md-6 align-self-center text-white ">
+                <h3>Get A Free Service Or Make A Call</h3>
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-end justify-content-center"><a href="tel:01314204643"
+                    class="button-2"><i class="fa fa-phone" aria-hidden="true"> </i> Make a call</a></div>
+        </div>
+    </div>
+
+    <!-- call section end -->
+
+    <!-- blog-section  start -->
+
+
+    <div class="container pt-5">
+        <div class="my-5 d-flex align-items-center justify-content-between">
+            <div>
+                <h3 class="product-grid-title">Latest Blog & News</h3>
+            </div>
+            <div>
+                <button class="button-1 m-0"> View All <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row ">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card overflow-hidden rounded-0 blog-card">
+                    <a href="#" class="blog-card-img ">
+                        <img src="./assets/images/blog/blog-2.jpg" class="img-fluid" alt="">
+                        <div class="blog-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> 15 Nov 2021
+                        </div>
+                    </a>
+                    <div class="blog-content">
+
+                        <h2> <a href="#">Lorem ipsum dolor sit.</a></h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel tenetur neque illum laboriosam
+                            dicta ullam
+                            voluptatem pariatur saepe officia assumenda.</p>
+                    </div>
+                    <div class="blog-footer d-flex justify-content-between">
+                        <div class="profile-img">
+                            <a href="#"><img src="./assets/images/blog/author.png" alt=""></a>
+
+
+
+                        </div>
+                        <div class="align-self-center read-more">
+                            <a href="#">
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card overflow-hidden rounded-0 blog-card">
+                    <a href="#" class="blog-card-img ">
+                        <img src="./assets/images/blog/blog.jpg" class="img-fluid" alt="">
+                        <div class="blog-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> 15 Nov 2021
+                        </div>
+                    </a>
+                    <div class="blog-content">
+
+                        <h2> <a href="#">Lorem ipsum dolor sit.</a></h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel tenetur neque illum laboriosam
+                            dicta ullam
+                            voluptatem pariatur saepe officia assumenda.</p>
+                    </div>
+                    <div class="blog-footer d-flex justify-content-between">
+                        <div class="profile-img">
+                            <a href="#"><img src="./assets/images/blog/author.png" alt=""></a>
+
+
+
+                        </div>
+                        <div class="align-self-center read-more">
+                            <a href="#">
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card overflow-hidden rounded-0 blog-card">
+                    <a href="#" class="blog-card-img ">
+                        <img src="./assets/images/blog/blog-2.jpg" class="img-fluid" alt="">
+                        <div class="blog-date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> 15 Nov 2021
+                        </div>
+                    </a>
+                    <div class="blog-content">
+
+                        <h2> <a href="#">Lorem ipsum dolor sit.</a></h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel tenetur neque illum laboriosam
+                            dicta ullam
+                            voluptatem pariatur saepe officia assumenda.</p>
+                    </div>
+                    <div class="blog-footer d-flex justify-content-between">
+                        <div class="profile-img">
+                            <a href="#"><img src="./assets/images/blog/author.png" alt=""></a>
+
+
+
+                        </div>
+                        <div class="align-self-center read-more">
+                            <a href="#">
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- blog-section  end -->
+
+
+
+
+
+
+
+    <!-- offcanvas cart start  -->
+    <div class="offcanvas card-offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header border-bottom">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 id="offcanvasRightLabel">SHOPPING CART</h5>
+        </div>
+        <div class="offcanvas-body">
+            <div class="cart pt-3">
+                <div class="cart-item border-bottom pb-3 d-flex ">
+                    <div class="cart-img"><img
+                            src="https://mdrubelhossain-me.github.io/fruits-ecommerce/assets/images/shopping-cart/1.png"
+                            alt=""></div>
+                    <div class="cart-detail ps-3 ">
+                        <div class="product-title ">
+                            <a class="" href="#">Purnava Omega 3 Enri Ched Egg</a>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <span class="price"> $ 39 x 3</span>
+                                <div class="close-btn d-inline-block align-self-center">
+                                    <button class="d-flex justify-content-center align-items-center" type="button"><i
+                                            class="btn btn-close m-auto"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart pt-3">
+                <div class="cart-item border-bottom pb-3 d-flex ">
+                    <div class="cart-img"><img
+                            src="https://mdrubelhossain-me.github.io/fruits-ecommerce/assets/images/shopping-cart/2.png"
+                            alt=""></div>
+                    <div class="cart-detail ps-3 ">
+                        <div class="product-title ">
+                            <a class="" href="#">Purnava Omega 3 Enri Ched Egg</a>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <span class="price"> $ 39 x 3</span>
+                                <div class="close-btn d-inline-block align-self-center">
+                                    <button class="d-flex justify-content-center align-items-center" type="button"><i
+                                            class="btn btn-close m-auto"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart pt-3">
+                <div class="cart-item border-bottom pb-3 d-flex ">
+                    <div class="cart-img"><img
+                            src="https://mdrubelhossain-me.github.io/fruits-ecommerce/assets/images/shopping-cart/1.png"
+                            alt=""></div>
+                    <div class="cart-detail ps-3 ">
+                        <div class="product-title ">
+                            <a class="" href="#">Purnava Omega 3 Enri Ched Egg</a>
+
+                            <div class="d-flex justify-content-between pt-2">
+                                <span class="price"> $ 39 x 3</span>
+                                <div class="close-btn d-inline-block align-self-center">
+                                    <button class="d-flex justify-content-center align-items-center" type="button"><i
+                                            class="btn btn-close m-auto"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between sub-total my-3">
+                <h5 class="fw-bold">Sub Total:</h5>
+                <h5 class="fw-bold">$203.00</h5>
+            </div>
+            <div class="row buttons">
+                <div class=" mb-3">
+                    <a href="cart.html"><button class="outline-btn button-cart" type="button" href="">VIEW
+                            CART</button></a>
+
+                    <a href="chackout.html"><button class="full-btn button-cart" type="button ">CHACKOUT
+                            NOW</button></a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- offcanvas cart end  -->
+
+
 
     <div class="pre-footer py-5">
         <div class="container">
@@ -310,9 +1787,41 @@
         </div>
     </footer>
 
-
+    <!-- jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+    <!-- owlCarousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="./assets/js/main.js"></script> -->
+    <script>
+
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: false,
+                autoplay: true, autoplayHoverPause: true, autoplaySpeed: 4000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        });
     </script>
 </body>
 
