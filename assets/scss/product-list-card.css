@@ -1,3 +1,23 @@
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 .product-list-card {
   padding: 30px 20px 40px;
   border: 1px solid #cacaca;

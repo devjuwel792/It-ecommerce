@@ -45,14 +45,33 @@
   }
 }
 
-// @keyframes slide-up {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(14px);
-//   }
+@mixin slide-up {
+  animation: slide-up 0.6s;
+}
+@mixin slide-left {
+  animation: slide-left 0.6s;
+}
 
-//   100% {
-//     opacity: 1;
-//     transform: none;
-//   }
-// }
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
