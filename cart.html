@@ -79,7 +79,7 @@
                     </a>
 
 
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuLink">
 
                         <li><a class="dropdown-item" href="#">Arabic</a></li>
                         <li><a class="dropdown-item" href="#">France</a></li>
@@ -99,17 +99,67 @@
         <div class="container  py-4 d-flex justify-content-between align-items-center">
             <div class="left-item">
                 <div class="logo">
-                    <a href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+                    <a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a>
                 </div>
                 <div class="menu">
-                    <a href="#">Home</a>
-                    <a href="#">Pages +</a>
-                    <a href="#">Shop +</a>
-                    <a href="#">Blog +</a>
+                    <ul class="d-flex">
+                        <li> <a href="index.html">Home</a> </li>
+
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-btn" role="button">
+
+                                Pages +
+                            </a>
+
+
+                            <ul class="dropdown-menu1 shadow-lg">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Team</a></li>
+
+                                <li><a class="dropdown-item" href="#">Shop</a></li>
+                                <li><a class="dropdown-item" href="#">User</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Faq</a></li>
+                                <li><a class="dropdown-item" href="cart.html">Shoping Cart</a></li>
+                                <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                                <li><a class="dropdown-item" href="chackout.html">Chack Out</a></li>
+
+
+                            </ul>
+
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-btn" role="button">
+
+                                Shop +
+                            </a>
+
+
+                            <ul class="dropdown-menu1 shadow-lg">
+                                <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                                <li><a class="dropdown-item" href="shop.html">Shop Grid</a></li>
+                                <li><a class="dropdown-item" href="shop.html">Shop 2 Column Grid </a></li>
+                                <li><a class="dropdown-item" href="shop.html">Shop 2 Column Grid </a></li>
+                                <li><a class="dropdown-item" href="shop.html">Shop 2 Column Grid </a></li>
+
+
+
+                            </ul>
+
+                        </li>
+
+                        <li> <a href="blog.html">Blog </a></li>
+                        <li> <a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+
                 </div>
             </div>
             <div class="right-item">
-                <a href="#">
+                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMoblieMenu"
+                    aria-controls="offcanvasMoblieMenu">
                     <span><i class="fa-solid fa-bars"></i></span>
                 </a>
                 <a href="#" class="position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -122,10 +172,11 @@
                     <span><i class="fa-regular fa-heart"></i></span>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill ">3</span>
                 </a>
-                <a href="#"><span>
+                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"
+                    aria-controls="offcanvasSearch"><span>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span></a>
-                <a href="#"><span>
+                <a href="login.html"><span>
                         <i class="fa-regular fa-user"></i>
                     </span></a>
             </div>
@@ -133,7 +184,6 @@
     </header>
 
     <!-- header end  -->
-
 
     <!-- Breadcumb start  -->
 

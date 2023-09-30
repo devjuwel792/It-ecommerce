@@ -792,6 +792,28 @@ img {
   max-width: 100%;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7caf02 #e6e6e6;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #7caf02;
+  border-radius: 10px;
+  border: 3px double #ffffff;
+}
+
 .h3 {
   font-size: 3.3rem;
   font-weight: 700;
