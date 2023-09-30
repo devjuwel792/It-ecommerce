@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
 
     <!-- Bootstrap start  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -87,7 +87,7 @@
                     </a>
 
 
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuLink">
 
                         <li><a class="dropdown-item" href="#">Arabic</a></li>
                         <li><a class="dropdown-item" href="#">France</a></li>
@@ -110,14 +110,64 @@
                     <a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a>
                 </div>
                 <div class="menu">
-                    <a href="index.html">Home</a>
-                    <a href="#">Pages +</a>
-                    <a href="shop.html">Shop +</a>
-                    <a href="blog.html">Blog +</a>
+                    <ul class="d-flex">
+                        <li> <a href="index.html">Home</a> </li>
+
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-btn" role="button">
+
+                                Pages +
+                            </a>
+
+
+                            <ul class="dropdown-menu1 shadow-lg">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Team</a></li>
+
+                                <li><a class="dropdown-item" href="#">Shop</a></li>
+                                <li><a class="dropdown-item" href="#">User</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Faq</a></li>
+                                <li><a class="dropdown-item" href="cart.html">Shoping Cart</a></li>
+                                <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                                <li><a class="dropdown-item" href="chackout.html">Chack Out</a></li>
+
+
+                            </ul>
+
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-btn" role="button">
+
+                                Shop +
+                            </a>
+
+
+                            <ul class="dropdown-menu1 shadow-lg">
+                                <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                                <li><a class="dropdown-item" href="shop.html">Shop Grid</a></li>
+                                <li><a class="dropdown-item" href="shop.html">Shop 2 Column Grid </a></li>
+                                <li><a class="dropdown-item" href="shop.html">Shop 2 Column Grid </a></li>
+                                <li><a class="dropdown-item" href="shop.html">Shop 2 Column Grid </a></li>
+
+
+
+                            </ul>
+
+                        </li>
+
+                        <li> <a href="blog.html">Blog </a></li>
+                        <li> <a href="blog.html">Contact Us</a></li>
+                    </ul>
+
+
                 </div>
             </div>
             <div class="right-item">
-                <a href="#">
+                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMoblieMenu"
+                    aria-controls="offcanvasMoblieMenu">
                     <span><i class="fa-solid fa-bars"></i></span>
                 </a>
                 <a href="#" class="position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -130,7 +180,8 @@
                     <span><i class="fa-regular fa-heart"></i></span>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill ">3</span>
                 </a>
-                <a href="#"><span>
+                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"
+                    aria-controls="offcanvasSearch"><span>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span></a>
                 <a href="login.html"><span>
@@ -157,7 +208,7 @@
 
                         <a href="#" class="d-flex justify-content-between">Vegetables & Fruits
                             <span><i class="fa-solid fa-angle-right"></i></span></a>
-                        <ul class="sub-menu-1 four-col-menu bg-white d-flex justify-content-between">
+                        <ul class="sub-menu-1 four-col-menu bg-white d-flex justify-content-between shadow">
                             <ul>
                                 <li class="header">Vegetales</li>
                                 <li><a href="#">Sacthels</a></li>
@@ -200,7 +251,7 @@
 
                         <a href="#" class="d-flex justify-content-between"> Oil and Vinegar
                             <span><i class="fa-solid fa-angle-right"></i></span></a>
-                        <ul class="sub-menu-1 four-col-menu bg-white d-flex justify-content-between">
+                        <ul class="sub-menu-1 four-col-menu bg-white d-flex justify-content-between shadow">
                             <ul>
                                 <li class="header">Vegetales</li>
                                 <li><a href="#">Sacthels</a></li>
@@ -236,7 +287,7 @@
 
                         <a href="#" class="d-flex justify-content-between"> Fruits
                             <span><i class="fa-solid fa-angle-right"></i></span></a>
-                        <ul class="sub-menu-1 four-col-menu bg-white d-flex justify-content-between">
+                        <ul class="sub-menu-1 four-col-menu bg-white d-flex justify-content-between shadow">
                             <ul>
                                 <li class="header">Vegetales</li>
                                 <li><a href="#">Sacthels</a></li>
@@ -282,7 +333,7 @@
 
                         <a href="#" class="d-flex justify-content-between"> Ocean Food
                             <span><i class="fa-solid fa-angle-right"></i></span></a>
-                        <ul class="sub-menu-1 four-col-menu bg-white d-flex justify-content-between">
+                        <ul class="sub-menu-1 four-col-menu bg-white d-flex justify-content-between shadow">
                             <ul>
 
                                 <li><a href="#">Sacthels</a></li>
@@ -301,13 +352,13 @@
 
                         <a href="#" class="d-flex justify-content-between"> Butter & Egg
                             <span><i class="fa-solid fa-angle-right"></i></span></a>
-                        <ul class="sub-menu-1  bg-white d-flex justify-content-between">
+                        <ul class="sub-menu-1  bg-white d-flex justify-content-between shadow">
                             <ul>
 
                                 <li class="categories-item categories-item-2">
                                     <a href="#" class="d-flex justify-content-between">Getting Submenu 2
                                         <span><i class="fa-solid fa-angle-right"></i></span></a>
-                                    <ul class="sub-menu-2  bg-white d-flex justify-content-between">
+                                    <ul class="sub-menu-2  bg-white d-flex justify-content-between shadow">
                                         <ul>
                                             <li><a href="#">juwel</a></li>
                                             <li><a href="#">juwel</a></li>
@@ -320,7 +371,7 @@
                                 <li class="categories-item categories-item-2">
                                     <a href="#" class="d-flex justify-content-between">Getting Submenu 2
                                         <span><i class="fa-solid fa-angle-right"></i></span></a>
-                                    <ul class="sub-menu-2  bg-white d-flex justify-content-between">
+                                    <ul class="sub-menu-2  bg-white d-flex justify-content-between shadow">
                                         <ul>
                                             <li><a href="#">juwel</a></li>
                                             <li><a href="#">juwel</a></li>
@@ -401,7 +452,7 @@
                             </div>
 
                         </div>
-                        <div class="carousel-item active " id="hero-slider-item-2">
+                        <div class="carousel-item  " id="hero-slider-item-2">
                             <div class="hero-slider">
 
 
@@ -420,7 +471,7 @@
                             </div>
 
                         </div>
-                        <div class="carousel-item active " id="hero-slider-item-3">
+                        <div class="carousel-item  " id="hero-slider-item-3">
                             <div class="hero-slider">
 
 
@@ -1951,6 +2002,32 @@
 
     <!-- offcanvas cart end  -->
 
+    <!-- offcanvas search start  -->
+
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSearch" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+    <!-- offcanvas search end  -->
+    <!-- offcanvas mobile Menu  strat  -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMoblieMenu" aria-labelledby="offcanvasLeftLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLeftLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+    <!-- offcanvas mobile Menu  end  -->
 
 
 
@@ -1959,8 +2036,7 @@
 
 
 
-
-
+    <!-- prefooter start  -->
 
 
     <div class="pre-footer py-5">
@@ -1991,8 +2067,8 @@
             </div>
         </div>
     </div>
-
-
+    <!-- prefooter end  -->
+    <!-- main footer start  -->
     <footer class="py-5 bg-black">
         <div class="container">
             <div class="row">
@@ -2120,6 +2196,9 @@
             </div>
         </div>
     </footer>
+    <!-- main footer end  -->
+
+
 
     <!-- jquery  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"

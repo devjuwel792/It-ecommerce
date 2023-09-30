@@ -103,9 +103,32 @@ header .left-item .menu a {
 header .left-item .menu a:hover {
   color: #7caf02;
 }
+header .left-item .menu ul li.dropdown {
+  position: relative;
+}
+header .left-item .menu ul li.dropdown:hover .dropdown-menu1 {
+  display: block;
+  animation: slide-up 0.5s;
+}
+header .left-item .menu ul li.dropdown ul.dropdown-menu1 {
+  position: absolute;
+  background: white;
+  padding: 0 !important;
+  min-width: 150px;
+  border-top: 3px solid #7caf02;
+  display: none;
+}
+header .left-item .menu ul li.dropdown ul.dropdown-menu1 li {
+  padding: 15px !important;
+  border-bottom: 1px dotted #888686;
+}
+header .left-item .menu ul li.dropdown ul.dropdown-menu1 li a {
+  padding: 0 !important;
+  font-weight: 400 !important;
+}
 @media (max-width: 800px) {
   header .left-item .menu {
-    display: none;
+    display: none !important;
   }
 }
 header .right-item a:nth-child(1) {

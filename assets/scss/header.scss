@@ -92,8 +92,40 @@ header {
           color: $primary-color;
         }
       }
+      ul {
+        li {
+          &.dropdown {
+            position: relative;
+            &:hover {
+              .dropdown-menu1 {
+                display: block;
+                animation: slide-up 0.5s;
+              }
+            }
+            ul.dropdown-menu1 {
+              position: absolute;
+              background: white;
+              padding: 0 !important;
+              min-width: 150px;
+              // top: 35px;
+              border-top: 3px solid $primary-color;
+              display: none;
+
+              li {
+                padding: 15px !important;
+                border-bottom: 1px dotted #888686;
+                a {
+                  padding: 0 !important;
+                  font-weight: 400 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
       @include res(800px) {
-        display: none;
+        display: none !important;
       }
     }
   }
