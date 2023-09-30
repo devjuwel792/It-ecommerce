@@ -1,0 +1,52 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+.card-grid-blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 15px;
+  margin: 100px auto 50px !important;
+  @include res(1000px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.pagination-section {
+  .pagination {
+    border-radius: 10px !important;
+    .page-item {
+      &:first-child {
+        .page-link {
+          border-radius: 10px 0 0 10px;
+        }
+      }
+      &:last-child {
+        .page-link {
+          border-radius: 0 10px 10px 0;
+        }
+      }
+      .page-link {
+        font-size: 1.5rem !important;
+        // padding: 8px 16px !important;
+        font-weight: 700;
+        color: $primary-color;
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+        padding-top: 11px !important;
+        padding-bottom: 11px !important;
+
+        &.active {
+          background-color: $primary-color !important;
+          border-color: $primary-color;
+          color: white;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+        &:hover {
+          background-color: $primary-color;
+          color: white;
+        }
+      }
+    }
+  }
+}
